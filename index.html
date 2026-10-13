@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070d15">
+  <meta name="description" content="alienPaco — code, radio, games, noise. An independent node for software, LoRa hardware, gaming and heavy music.">
+  <title>alienPaco // personal node</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="shell" id="top">
+    <header class="topbar panel">
+      <a class="brand" href="#top"><span class="brand-name">ALIEN<span>PACO</span><span class="cursor">_</span></span><small>ANARCH.LOL // PERSONAL NODE</small></a>
+      <div class="online"><span class="dot"></span> NODE ONLINE</div>
+      <nav aria-label="Main navigation"><a href="#software">[01] SOFTWARE</a><a href="#hardware">[02] HARDWARE</a><a href="#gaming">[03] GAMING</a><a href="#music">[04] MUSIC</a></nav>
+      <time class="clock" id="clock" aria-label="Local time">--:--:--</time>
+    </header>
+
+    <div class="layout">
+      <aside class="side-stack">
+        <section class="panel padded node"><h2>NODE // INFO</h2><dl><dt>USER</dt><dd>alienpaco</dd><dt>HOST</dt><dd>anarch.lol</dd><dt>STATUS</dt><dd><span class="dot"></span> online</dd><dt>MODE</dt><dd>build / play / noise</dd></dl><div class="quick-nav"><a href="#software">&gt;_ SOFTWARE <span>[+]</span></a><a href="#hardware">&gt;_ HARDWARE <span>[+]</span></a><a href="#gaming">&gt;_ GAMING <span>[+]</span></a><a href="#music">&gt;_ MUSIC <span>[+]</span></a></div></section>
+        <section class="panel padded playing"><h2>AUDIO // SIGNAL</h2><div class="wave" aria-hidden="true" id="wave"></div><p class="muted small">HEAVY ROTATION</p><p>Hardcore / Metal</p><p class="muted small">Guitars. Feedback. Noise.</p></section>
+      </aside>
+
+      <main>
+        <section class="panel hero" id="about"><div class="eyebrow">// ALIENPACO</div><h1>alien<span>Paco</span><span class="cursor">_</span></h1><p class="hero-sub">code <em>/</em> radio <em>/</em> games <em>/</em> noise</p><p class="tagline">Building things, breaking things, figuring out how they work.</p><div class="hero-actions"><a class="button" href="#software">&gt; EXPLORE MODULES ↗</a><a class="button secondary" href="https://github.com/pavelrogala" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></div><div class="corner tl"></div><div class="corner br"></div></section>
+
+        <div class="modules">
+          <section class="panel module" id="software"><h2><span>01 //</span> SOFTWARE</h2><div class="module-symbol" aria-hidden="true">&gt;_</div><p>Linux, open source, automation and tooling. Building systems I actually want to run.</p><ul><li><strong>ANARCH</strong> — reproducible Arch Linux bootstrap</li><li>Dotfiles &amp; desktop configuration</li><li>Scripts, tools &amp; experiments</li></ul><a class="module-link" href="https://github.com/pavelrogala/anarch" target="_blank" rel="noopener noreferrer">[ VIEW ANARCH ] ↗</a></section>
+          <section class="panel module" id="hardware"><h2><span>02 //</span> EMBEDDED / RF</h2><div class="module-symbol glyph" aria-hidden="true">⌁</div><p>Microcontrollers, LoRa, radio, sensors and low-power systems. Physical-world tinkering.</p><ul><li>Embedded LoRa experiments</li><li>RF &amp; telemetry</li><li>Prototypes, schematics &amp; builds</li></ul><a class="module-link" href="https://github.com/pavelrogala" target="_blank" rel="noopener noreferrer">[ PROJECTS ON GITHUB ] ↗</a></section>
+          <section class="panel module" id="gaming"><h2><span>03 //</span> GAMING</h2><div class="module-symbol glyph" aria-hidden="true">⌖</div><p>Games with depth, systems to master and grinds worth committing to.</p><ul><li>Shooters / FPS</li><li>Old School RuneScape</li><li>Strategy &amp; sandbox games</li></ul><span class="module-link inert">[ PLAY / GRIND / REPEAT ]</span></section>
+          <section class="panel module" id="music"><h2><span>04 //</span> MUSIC</h2><div class="module-symbol glyph" aria-hidden="true">♫</div><p>Guitarist playing in hardcore and metal bands. Riffs, recording, rehearsals and stages.</p><ul><li>Hardcore &amp; metal</li><li>Guitar / songwriting</li><li>Live shows &amp; recordings</li></ul><span class="module-link inert">[ TURN IT UP ]</span></section>
+        </div>
+      </main>
+
+      <aside class="links-side panel padded"><h2>QUICK // LINKS</h2><div class="link-grid"><a href="https://github.com/pavelrogala" target="_blank" rel="noopener noreferrer"><span>⌘</span>GITHUB</a><a href="https://github.com/pavelrogala/anarch" target="_blank" rel="noopener noreferrer"><span>&gt;_</span>ANARCH</a><a href="#gaming"><span>⌖</span>GAMING</a><a href="#music"><span>♫</span>MUSIC</a></div><div class="side-note"><span class="signal-dot"></span> NO TRACKING<br> NO THIRD-PARTY SCRIPTS</div></aside>
+    </div>
+
+    <footer class="footer-grid">
+      <section class="panel padded terminal"><h2>// TERMINAL</h2><div class="term-line"><span>alienpaco@node</span>:~$ cat /etc/identity</div><div class="term-output">software | embedded RF | gaming | music</div><div class="term-line"><span>alienpaco@node</span>:~$ <b class="block-cursor"> </b></div></section>
+      <section class="panel padded radio"><h2>// RADIO // VISUALIZER</h2><div class="radio-label">868 MHz <span>LoRa / RF EXPERIMENTS</span></div><div class="bars" id="bars" aria-hidden="true"></div><p class="muted small">Decorative signal visualization · not live data</p></section>
+      <section class="panel padded status"><h2>// NODE STATUS</h2><div class="status-line"><span>WEB</span><strong>STATIC / FAST</strong></div><div class="status-line"><span>ANALYTICS</span><strong>NONE</strong></div><div class="status-line"><span>DEPENDENCIES</span><strong>ZERO</strong></div><div class="status-line"><span>STATE</span><strong>ONLINE<span class="dot"></span></strong></div></section>
+    </footer>
+    <div class="bottom-line"><span>alienpaco.anarch.lol</span><span>INDEPENDENT NODE // 2026</span><a href="#top">BACK TO TOP ↑</a></div>
+  </div>
+</body>
+</html>
